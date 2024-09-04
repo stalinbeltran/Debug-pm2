@@ -9,6 +9,10 @@ module.exports = {
 
   deploy : {
     production : {
+      env: {
+        "PORT": 3000,
+        "NODE_ENV": "development"
+    },
       user : 'SSH_USERNAME',
       host : 'SSH_HOSTMACHINE',
       ref  : 'origin/master',
