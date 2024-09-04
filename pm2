@@ -1,4 +1,7 @@
 #!/bin/bash
-
+echo hola
 DIR="$(dirname "$(readlink -f "$0")")"
-$DIR/node/bin/node $DIR/bin/pm2 $@
+# $DIR/node/bin/node $DIR/bin/pm2 $@
+node $DIR/bin/pm2 $@
+
+
